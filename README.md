@@ -9,7 +9,7 @@ This is my first python project, data source is from Luke Barousse's Python Cour
 # Exploratory Data Analysis
 ## 1. Monthly Job Postings in the US
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ### Visualize data
 ```python
 import matplotlib.pyplot as plt
@@ -78,7 +78,7 @@ plt.show()
 4. A hiring trend in Q4 are slowing down because companies pause hiring, especially in December, this could be budget constraints and decrease in new upcoming projects.
 ## 2. Annual salary by Job Title in the US
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ```python
 top6 = df1['job_title_short'].value_counts().nlargest(6).index
 df_top6 = df1.loc[df1['job_title_short'].isin(top6)]
@@ -104,7 +104,7 @@ plt.show()
 2. The presence of outliers (some reaching $400,000 - $500,000 or more) indicates that certain professionals in data roles, likely working in top tech firms or finance, can earn exceptionally high salaries.
 ## 3. Top Demanding Skill in the US
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ### Visualize data
 ```python
 plt.figure(figsize=(10, 8))
@@ -195,7 +195,7 @@ pipeline management.
 
 ## 4. Top Highest-paid Skills by Top 3 Job Titles in the US
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ```python
 plt.figure(figsize=(8,8))
 plt.subplot(3,2,1)
@@ -260,7 +260,7 @@ plt.show()
 
 ## 5. Skill Trend Demand of Data Analysts in the US
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ```python
 sns.lineplot(data = df_DA_pivot, legend = False, dashes = False, marker = 'o', palette = 'rainbow')
 sns.despine()
@@ -303,7 +303,7 @@ plt.show()
 Lastly, I will find out which skills are optimal to learn for a Data Analyst to land a job in the US. An optimal skill is defined as a skill which has both high demand and high annual compensation by employers.  
 
 View my notebook with detailed steps here: 
-[Project.ipynb](project_youtube\project.ipynb)
+[Project.ipynb](project_youtube/project.ipynb)
 ```python
 from adjustText import adjust_text
 sns.scatterplot(data = df_DA_groupby, x='percentage', y='median',legend=True)
