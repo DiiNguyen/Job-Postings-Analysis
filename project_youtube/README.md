@@ -349,4 +349,4 @@ This project provided valuable insights into the job market for Data Analysts, D
 
 This project is my essential foundation for further analysis and marks my serious learning in data field; especially the interference of data and finance.
 
-I would like to acknowledge with my most sincere thanks for your reading.
+I would like to acknowledge with my most sincere thanks for your time on reading. 
